@@ -42,14 +42,11 @@ class SpecialWordFinder(WordFinder):
     >>> swf = SpecialWordFinder("complex.txt")
     3 words read
 
-    >>> swf.random() in ["pear", "carrot", "kale"]
-    True
+    >>> swf.random()
 
-    >>> swf.random() in ["pear", "carrot", "kale"]
-    True
+    >>> swf.random()
 
-    >>> swf.random() in ["pear", "carrot", "kale"]
-    True
+    >>> swf.random() 
     """
 
     def parse(self, dict_file):
