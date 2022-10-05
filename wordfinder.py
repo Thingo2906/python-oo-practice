@@ -39,14 +39,17 @@ class WordFinder:
 class SpecialWordFinder(WordFinder):
     """Specialized WordFinder that excludes blank lines/comments.
     
-    >>> swf = SpecialWordFinder("complex.txt")
-    3 words read
+    >>> swf = SpecialWordFinder("veggies.txt")
+    4 words read
 
     >>> swf.random()
+    'kale'
 
     >>> swf.random()
+    'parsnips'
 
     >>> swf.random() 
+    'apple'
     """
 
     def parse(self, dict_file):
